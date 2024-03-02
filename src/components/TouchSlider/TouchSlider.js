@@ -49,8 +49,10 @@ const TouchSlider = ({ clients }) => {
             <div className="image-container">
               <img src={client.url} alt={client.title} />
             </div>
-            <p>{client.title}</p>
-            <p>{client.address}</p>
+            <p style={{ fontSize: "24px", fontWeight: "bold" }}>
+              {client.title}
+            </p>
+            <p style={{ fontSize: "20px" }}>{client.Address}</p>
           </li>
         ))}
       </ul>
